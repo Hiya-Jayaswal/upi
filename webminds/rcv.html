@@ -24,7 +24,7 @@
             <ul class="mainMenu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="security.html">Security setting</a></li>
-                <li><a href="contact.html">contact us </a></li>
+                <li><a href="contact.html">Contact us </a></li>
                 <li><a href="help.html">Help and Support </a></li>
                 <li><a href="terms.html">Terms of services</a></li>
            </ul>
@@ -35,12 +35,23 @@
               <img src="profile.jpg" alt="profile picture">
           </div>
 	<h3>Receive Money</h3>
-	<form>
-		<label for="upiId">UPI ID:</label><br>
-		<input type="text" id="upiId" name="upiId"><br>
-		<label for="amount">Amount:</label><br>
-		<input type="text" id="amount" name="amount"><br>
-		<input type="submit" value="Receive">
-	</form>
-</body>
-</html>
+  <div class="containerrcv">
+    <div class="qr-code">
+        <!-- Here goes your QR code -->
+        <!-- For example, you can use an image or an SVG -->
+        <img src="qr_code.jpeg" alt="QR Code" width="100px">
+    </div>
+    <div class="caption">
+        <p>Share this QR code to receive money</p>
+    </div>
+    <div class="buttonsrcv">
+        <button id="download-btn">Download QR</button><br/><br/>
+        <button id="share-btn">Share Code</button>
+    </div><br/><br/>
+<div class ="upi">
+  <p>-------------------------------- OR--------------------------</p>
+  <br/><br/><br/>
+  <p>xyzabc@paytm</p><br/><br/>
+  <p>Receive money through UPI ID</p>
+</div>
+</div>

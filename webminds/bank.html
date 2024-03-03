@@ -9,7 +9,7 @@
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap");
     </style>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
@@ -23,7 +23,7 @@
             <ul class="mainMenu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="security.html">Security setting</a></li>
-                <li><a href="contact.html">contact us </a></li>
+                <li><a href="contact.html">Contact us </a></li>
                 <li><a href="help.html">Help and Support </a></li>
                 <li><a href="terms.html">Terms of services</a></li>
            </ul>
@@ -34,10 +34,13 @@
               <img src="profile.jpg" alt="profile picture">
           </div>
         <div id="main">
-        <h3>Add bank details</h3>
+          
+        <div class="bankicon">
+          <img src="bank_account_icon.jpg" alt="profile picture" width="250px">
+      </div>
           <div class = "add">
           <h4> Select Bank</h4>
-          <input type = "text" placeholder="enter bank">
+          <input type = "text" placeholder="enter bank" width="100px">
           <h4> Enter Account Number </h4>
           <input type = "text" placeholder="enter number">
           <h4> Account Holder Name</h4>
@@ -45,5 +48,5 @@
           </div>
           <br/><br/><br/>
           <div class = "bt">
-          <button type = button> Add </button>
+          <button type = button ><a href="success.html">Add</a></button>
           </div>

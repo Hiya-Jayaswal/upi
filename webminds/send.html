@@ -24,7 +24,7 @@
             <ul class="mainMenu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="security.html">Security setting</a></li>
-                <li><a href="contact.html">contact us </a></li>
+                <li><a href="contact.html">Contact us </a></li>
                 <li><a href="help.html">Help and Support </a></li>
                 <li><a href="terms.html">Terms of services</a></li>
            </ul>
@@ -34,15 +34,41 @@
           <div class="profile">
               <img src="profile.jpg" alt="profile picture">
           </div>
-	<h3>Send Money</h3>
-    <div id="qrcode"></div>
-	<form id="upiForm">
-	  <input type="text" id="pa" placeholder="Payee address" required>
-	  <input type="text" id="pn" placeholder="Payee name" required>
-	  <input type="text" id="tn" placeholder="Transaction note" required>
-	  <input type="number" id="am" placeholder="Amount" step="0.01" required>
-	  <input type="submit" value="Generate QR Code">
-	</form>
-	<script src= "script.js"></script>
+          <h3>Send Money</h3>
+        </div>
+    <div class="main">
+      <div class="formsend">
+        <div class="form-group">
+            <label for="payment-method" > Payment Method: </label><br/>
+            <select name="payment-method" id="payment-method">
+                <option value="credit-card"> Credit Card</option>
+                <option value="debit-card"> Debit Card</option>
+                <option value="upi"> UPI </option>
+            </select>
+        </div>
+<br/>
+        <div class="form-group"> 
+            <label for="account-number">Review Account Number</label><br/>
+            <input type="text" id="account-number">
+        </div>
+        <div class="amount">
+            <label for="amount"> Amount: </label>
+            <div class="input-group">
+                <input type="text" id="amount" placeholder="Enter Your Amount">
+                <select name="currency" id="currency">
+                    <option value="usd"> USD </option>
+                    <option value="eur"> EUR </option>
+                    <option value="inr"> INR </option>
+                </select>
+            </div>
+        </div>
+
+        <div class="buttonsend">
+            <button id="cancel-button">Cancel</button>
+            <button id="submit-button"><a href ="payment.html">Submit</a></button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js" async defer></script>
 </body>
 </html>
